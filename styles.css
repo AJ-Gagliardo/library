@@ -1,0 +1,45 @@
+/* Pallete Colors */
+
+/* grey pallete
+#f2f2f2
+#ebd5d5
+
+*/
+
+/* brown pallete
+#f2e9d0
+#eaceb4
+#e79e85
+#bb5a5a
+*/
+
+
+/*  text color options
+#463832
+*/
+
+
+:root{
+    background-color: #f2e9d0;
+    margin: 0;
+    padding:0;
+    color: #463832;
+}
+
+
+
+
+.footer{
+    display:flex;
+}
+
+.footer a{
+text-decoration: none ;
+color: #463832;
+}
+
+.githublogo{
+    height:2rem;
+    width:2rem;
+    justify-content: center
+}

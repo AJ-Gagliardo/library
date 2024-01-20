@@ -18,7 +18,7 @@
 #463832
 */
 
-
+/* General */
 :root{
     background-color: #f2e9d0;
     margin: 0;
@@ -26,20 +26,66 @@
     color: #463832;
 }
 
+.container{
+    margin-left:5%;
+    margin-right:5%;
+    width:85vw;
+    height:100vh;
+    /* display:flex;
+    flex-direction:column;
+    align-items: center; */
+
+}
+
+
+/* Header */
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
 
 
 
+
+
+/* Content */
+
+.content{
+    height:70%;
+    display:grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-row:auto;
+width:100%;
+}
+
+#content-add-book{
+    background-color:transparent;
+    grid-column: 1/5;
+    grid-row:1/2;
+    gap:5%
+    
+}
+
+
+
+/* Footer */
 .footer{
     display:flex;
+    align-items:center;
+    
 }
 
 .footer a{
 text-decoration: none ;
 color: #463832;
+display:flex;
+align-items:center;
 }
 
 .githublogo{
     height:2rem;
     width:2rem;
-    justify-content: center
+
 }

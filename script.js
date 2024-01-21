@@ -29,14 +29,16 @@ function Book(title, author, pages, read  ){
 function addBookToLibrary(title, author, pages, read) {
     myLibrary.push(new Book(title, author, pages, read));
     //maybe here i can do DOM to put all myLibrary[i] in the grid '#content' 
+    // content.appendChild(bookDiv);
+    // content.appendChild(myLibrary[0])
 
   }
 
-// book1 = new Book('Subtle Art of Not Giving a F**', 'Mark Manson', 224, true)
-// console.log(book1)
 
-// myLibrary.push(book1);
 
 const content = document.getElementById('content');
 console.log(content);
+
+const bookDiv = document.createElement('div');
+// bookDiv.setAttribute('bookDiv');
 

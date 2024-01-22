@@ -26,14 +26,25 @@ function Book(title, author, pages, read  ){
 
 }
 
+function resetDisplayLibrary(){
+    for (let i=0; i< myLibrary.length; i++)
+    console.log(`${myLibrary[i].title}`);
+    return;
+}
+
 function addBookToLibrary(title, author, pages, read) {
     myLibrary.push(new Book(title, author, pages, read));
     //maybe here i can do DOM to put all myLibrary[i] in the grid '#content' 
     // content.appendChild(bookDiv);
     // content.appendChild(myLibrary[0])
-
+// run a for loop myLibrary[i] 
+resetDisplayLibrary();
+// by ${book[0].author}, has ${book[0].pages}
   }
 
+  //testing
+  //addBookToLibrary('Subtle Art of Not Giving a F**', 'Mark Manson', 224, true)
+  //addBookToLibrary('8 habits of highly effective people', 'Stephen R. Covey', 432, true)
 
 
 const content = document.getElementById('content');

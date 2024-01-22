@@ -25,74 +25,7 @@ function Book(title, author, pages, read  ){
     this.read=read;
 
 }
-// a copy in case I mess up this function
-// function resetDisplayLibrary(){
-//     for (let i=0; i< myLibrary.length; i++)
-//     console.log(`${myLibrary[i].title}`);
-//     return;
-// }
 
-/*
-function resetDisplayLibrary(){
-// myLibrary.length=0;
-const allBooks = document.querySelectorAll('.book');
-allBooks.forEach(book => {
-    book.remove();
-});
-
-
-}
-
-
-function DisplayLibrary(){
-    for (let i=0; i< myLibrary.length; i++){
-
-        // This section is to create div for each book, so the data can be inserted in the grid
-        const bookDiv = document.createElement('div');
-        bookDiv.classList.add('book'); // this is to separate books in grid
-        bookDiv.id= `${myLibrary[i]}`;   // not sure if I will use it but can be helpful to have individual ids
-    // This next section is for each aprt of the book, will be useful later for CSS (if i decide to do different colors to each book presentation);
-        const titleDiv=document.createElement('div');
-        titleDiv.classList.add('title');
-        titleDiv.textContent= `${myLibrary[i].title}`
-
-        const authorDiv=document.createElement('div');
-        authorDiv.classList.add('author');
-        authorDiv.textContent= `${myLibrary[i].author}`;
-
-        const pagesDiv=document.createElement('div');
-        pagesDiv.classList.add('pages');
-        pagesDiv.textContent= `${myLibrary[i].pages}`;
-
-        const readDiv = document.createElement('div');
-       
-       if (myLibrary[i].read === true){
-
-           readDiv.classList.add('read');
-           readDiv.textContent = "read";
-       }
-           else { 
-
-               readDiv.classList.add('notRead');
-               readDiv.textContent = "Not Read";
-            }
-             
-
-
-
-    // putting elements inside the book div
-        bookDiv.appendChild(titleDiv);
-        bookDiv.appendChild(authorDiv);
-        bookDiv.appendChild(pagesDiv);
-        bookDiv.appendChild(readDiv);
-
-        content.appendChild(bookDiv);
-
-    }
-
-    ;
-}
-*/
 
 
 

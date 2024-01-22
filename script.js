@@ -51,10 +51,32 @@ function DisplayLibrary(){
         authorDiv.classList.add('author');
         authorDiv.textContent= `${myLibrary[i].author}`;
 
+        const pagesDiv=document.createElement('div');
+        pagesDiv.classList.add('pages');
+        pagesDiv.textContent= `${myLibrary[i].pages}`;
+
+        const readDiv = document.createElement('div');
+       
+       if (myLibrary[i].read === true){
+
+           readDiv.classList.add('read');
+           readDiv.textContent = "read";
+       }
+           else {
+
+               readDiv.classList.add('notRead');
+               readDiv.textContent = "Not Read";
+            }
+             
+               
+            // } 
+
 
     // putting elements inside the book div
         bookDiv.appendChild(titleDiv);
         bookDiv.appendChild(authorDiv);
+        bookDiv.appendChild(pagesDiv);
+        bookDiv.appendChild(readDiv);
 
         content.appendChild(bookDiv);
 

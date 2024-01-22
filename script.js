@@ -32,7 +32,16 @@ function Book(title, author, pages, read  ){
 //     return;
 // }
 
-// function resetDisplayLibrary(){}
+/*
+function resetDisplayLibrary(){
+// myLibrary.length=0;
+const allBooks = document.querySelectorAll('.book');
+allBooks.forEach(book => {
+    book.remove();
+});
+
+
+}
 
 
 function DisplayLibrary(){
@@ -62,14 +71,13 @@ function DisplayLibrary(){
            readDiv.classList.add('read');
            readDiv.textContent = "read";
        }
-           else {
+           else { 
 
                readDiv.classList.add('notRead');
                readDiv.textContent = "Not Read";
             }
              
-               
-            // } 
+
 
 
     // putting elements inside the book div
@@ -84,6 +92,10 @@ function DisplayLibrary(){
 
     ;
 }
+*/
+
+//###### Important, i may be doing wrongapproach on oing through ALL of the elements everytime I create a new one
+// maybe i should just add 1 by 1 and then  when i want to eras ethem just do it y ID. and when adding probably can do with .length to get the last one
 
 
 function addBookToLibrary(title, author, pages, read) {

@@ -113,7 +113,10 @@ function resetDisplayLibrary(){
             // This section is to create div for each book, so the data can be inserted in the grid
             const bookDiv = document.createElement('div');
             bookDiv.classList.add('book'); // this is to separate books in grid
-            bookDiv.id= `book${myLibrary[myLibrary.length-1]}`;   // not sure if I will use it but can be helpful to have individual ids
+            // bookDiv.id= `book${myLibrary[myLibrary.length-1]}`;   // not sure if I will use it but can be helpful to have individual ids
+            bookDiv.id= `book${myLibrary.length}`; 
+
+
         // This next section is for each aprt of the book, will be useful later for CSS (if i decide to do different colors to each book presentation);
             const titleDiv=document.createElement('div');
             titleDiv.classList.add('title');

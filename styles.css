@@ -58,6 +58,7 @@
 grid-template-columns: 1fr 1fr 1fr 1fr;
 grid-row:auto;
 width:100%;
+gap:2rem;
 }
 
 #content-add-book{
@@ -88,4 +89,29 @@ align-items:center;
     height:2rem;
     width:2rem;
 
+}
+
+.book{
+    background-color: rgb(218, 199, 181)  ;
+    padding:1rem;
+    box-shadow:10px 5px 5px #463832;
+    height: 8 rem;
+    display:grid;
+    grid-column: 1fr;
+    /* grid-row:auto; */
+    /* gap:2px; */
+    text-align:center;
+}
+
+.read{
+    text-align:center;
+    background-color: olivedrab;
+    color:white;
+    text-justify: center;
+}
+
+.notRead{
+    text-align:center;
+    background-color: rgb(119, 3, 3);
+    color:white;
 }

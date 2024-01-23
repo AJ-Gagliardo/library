@@ -61,7 +61,7 @@ function resetDisplayLibrary(){
     
             const pagesDiv=document.createElement('div');
             pagesDiv.classList.add('pages');
-            pagesDiv.textContent= `${myLibrary[myLibrary.length-1].pages}`;
+            pagesDiv.textContent= `${myLibrary[myLibrary.length-1].pages} pages`;
     
             const readDiv = document.createElement('div');
            

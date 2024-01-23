@@ -38,9 +38,9 @@
 }
 
 
-::bakdrop{
+::backdrop{
     background-color: #141413;
-    opacity:90%;
+    opacity:30%;
 }
 /* Header */
 
@@ -140,9 +140,13 @@ align-items:center;
 
 form{
     display:grid;
-    border-radius: 8px;
+    border-radius: 8px  ;
 }
 
 input{
     display:grid;
+}
+
+.formButtons .closeButton{
+    margin-left:0;
 }

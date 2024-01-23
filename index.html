@@ -24,26 +24,27 @@
             <button class="btn add-book" id="content-add-book">+ Add Book</button>
             <dialog id="bookDialog">
                 <button class="closeButton">X</button>
-                <form>
+                <form class="form" method="dialog">
                 <label>Book Title: 
-                    <input type="text" id="titleInput">
+                    <input type="text" id="titleInput" required>
                    
                 </label>    
                 <label>Author:
-                    <input type="text" id="Author">
+                    <input type="text" id="authorInput" required>
                 </label>
                 <label>Number of Pages:
-                    <input type="number" id="pagesInput">
+                    <input type="number" id="pagesInput" min="0" max="1000" required>
                 </label>
                 <label>Have you finished reading it?
-                    <select>
-                        <option value="default">Read it</option>
-                        <option>Not read</option>
+                    <select id="selectInput">
+                        <option value=true>Read it</option>
+                        <option value=false>Not read</option>
                     </select>
                 </label>
-                <div>
-                    <button formmethod="dialog" >Cancel</button>
-                    <button id="confirmBtn">Confirm</button>
+                <div class="formButtons">
+                    <button class="closeButton">Cancel</button> 
+                    <!-- ormmethod="dialog" -->
+                    <button id="confirmBtn" type="submit">Confirm</button>
                 </div>
                 
                 </form>

@@ -125,7 +125,7 @@ const bookDiv = document.createElement('div');
 
 const dialog = document.getElementById('bookDialog')
 const addBookBtn = document.querySelectorAll('.add-book');
-const closeButton = document.querySelector('.closeButton');
+const closeButton = document.querySelectorAll('.closeButton');
 
 // addBookBtn.addEventListener()
 
@@ -135,6 +135,30 @@ addBookBtn.forEach(button => {
     });
 });
 
-closeButton.addEventListener('click',()=>{
+closeButton.forEach(button=>{
+button.addEventListener('click',()=>{
     dialog.close();
-})
+});
+
+});
+
+// closeButton.addEventListener('click',()=>{
+//     dialog.close();
+// })
+
+
+// ###Dialog Modal
+
+const title = document.getElementById('titleInput');
+const author = document.getElementById('authorInput');
+const pages = document.getElementById('pagesInput');
+const select = document.getElementById('selectInput');
+
+
+const confirmBtn = document.getElementById('confirmBtn');
+
+confirmBtn.addEventListener('click', ()=>
+addBookToLibrary(title.value, 
+    author.value, 
+    pages.value, 
+    true));

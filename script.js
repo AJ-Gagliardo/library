@@ -120,3 +120,16 @@ console.log(content);
 const bookDiv = document.createElement('div');
 // bookDiv.setAttribute('bookDiv');
 
+
+// ## Dialog
+
+const dialog = document.querySelector('dialog')
+const addBookBtn = document.querySelectorAll('.add-book');
+
+// addBookBtn.addEventListener()
+
+addBookBtn.forEach(button => {
+    button.addEventListener('click',()=>{
+        dialog.showModal();
+    });
+});

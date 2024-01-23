@@ -38,6 +38,10 @@
 }
 
 
+::bakdrop{
+    background-color: #463832;
+    opacity:20%;
+}
 /* Header */
 
 .header{
@@ -98,12 +102,9 @@ align-items:center;
     background-color: rgb(218, 199, 181)  ;
     padding:1rem;
     box-shadow:10px 5px 5px #463832;
-    /* height: 6 rem; */
-    /* display:flex;
-    flex-direction:column; */
+
     display:grid;
 
-    /* grid-column: 1fr; */
     grid-template-row:1rem;
     
     /* gap:2px; */

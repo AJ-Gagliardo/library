@@ -23,8 +23,27 @@
         <div class="content" id="content">
             <button class="btn add-book" id="content-add-book">+ Add Book</button>
             <dialog>
-                <button>X</button>
-                <p>this is just an example message</p>
+                <button class="closeButton">X</button>
+                <form>
+                <label>Book Title: 
+                    <input type="text" id="titleInput">
+                   
+                </label>    
+                <label>Author:
+                    <input type="text" id="Author">
+                </label>
+                <label>Number of Pages:
+                    <input type="number" id="pagesInput">
+                </label>
+                <label>Have you finished reading it?
+                    <select>
+                        <option value="default">Read it</option>
+                        <option>Not read</option>
+                    </select>
+
+                </label>
+                
+                </form>
             </dialog>
         </div>
         <hr>

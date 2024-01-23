@@ -125,6 +125,7 @@ const bookDiv = document.createElement('div');
 
 const dialog = document.querySelector('dialog')
 const addBookBtn = document.querySelectorAll('.add-book');
+const closeButton = document.querySelector('.closeButton');
 
 // addBookBtn.addEventListener()
 
@@ -133,3 +134,7 @@ addBookBtn.forEach(button => {
         dialog.showModal();
     });
 });
+
+closeButton.addEventListener('click',()=>{
+    dialog.close();
+})

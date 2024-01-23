@@ -22,7 +22,7 @@
         <hr>
         <div class="content" id="content">
             <button class="btn add-book" id="content-add-book">+ Add Book</button>
-            <dialog>
+            <dialog id="bookDialog">
                 <button class="closeButton">X</button>
                 <form>
                 <label>Book Title: 
@@ -40,11 +40,15 @@
                         <option value="default">Read it</option>
                         <option>Not read</option>
                     </select>
-
                 </label>
+                <div>
+                    <button formmethod="dialog" >Cancel</button>
+                    <button id="confirmBtn">Confirm</button>
+                </div>
                 
                 </form>
             </dialog>
+
         </div>
         <hr>
         <div class="footer"><a href="https://aj-gagliardo.github.io/">Copyright © 2024 Antonio Gagliardo (ajgagliardo)

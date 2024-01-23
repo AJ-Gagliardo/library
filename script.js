@@ -123,7 +123,7 @@ const bookDiv = document.createElement('div');
 
 // ## Dialog
 
-const dialog = document.querySelector('dialog')
+const dialog = document.getElementById('bookDialog')
 const addBookBtn = document.querySelectorAll('.add-book');
 const closeButton = document.querySelector('.closeButton');
 

@@ -55,10 +55,13 @@
 .content{
     height:70%;
     display:grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-row:auto;
+/* grid-template-columns: 1fr 1fr 1fr 1fr; */
+grid-template-columns: 20% 20% 20% 20%;
+grid-template-rows: 1fr 1fr 1fr;
 width:100%;
-gap:2rem;
+gap:2rem 2rem;
+column-gap: 5%;
+overflow: scroll;
 }
 
 #content-add-book{
@@ -95,12 +98,17 @@ align-items:center;
     background-color: rgb(218, 199, 181)  ;
     padding:1rem;
     box-shadow:10px 5px 5px #463832;
-    height: 8 rem;
-    display:grid;
-    grid-column: 1fr;
-    /* grid-row:auto; */
+    /* height: 6 rem; */
+    display:flex;
+    flex-direction:column;
+
+    /* grid-column: 1fr; */
+    grid-template-row:1rem;
+    
     /* gap:2px; */
     text-align:center;
+    border-radius:4px;
+    position:relative;
 }
 
 .read{
@@ -108,6 +116,11 @@ align-items:center;
     background-color: olivedrab;
     color:white;
     text-justify: center;
+    
+    /* position:absolute;
+    top:80%;
+    left:40%; */
+    top:20%;
 }
 
 .notRead{

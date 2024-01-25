@@ -86,10 +86,12 @@ function resetDisplayLibrary(){
                 readDiv.addEventListener('click', ()=> {
                     if(readDiv.classList.contains('read')){
                         readDiv.classList.replace('read','notRead');
+                        readDiv.textContent = 'Not Read';
                         console.log('changed read to bot read')
                     }
                     else if(readDiv.classList.contains('notRead')){
                         readDiv.classList.replace('notRead','read');
+                        readDiv.textContent = 'Read';
                         console.log('changed not read to read')
                     }
                     else{

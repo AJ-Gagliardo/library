@@ -69,10 +69,10 @@ function resetDisplayLibrary(){
     
             const readDiv = document.createElement('div');
            
-           if (myLibrary[myLibrary.length-1].value === true){
+           if (myLibrary[myLibrary.length-1].read === 'Read It'){
     
                readDiv.classList.add('read');
-               readDiv.textContent = "read";
+               readDiv.textContent = "Read";
 
 
            }
@@ -209,13 +209,14 @@ const pages = document.getElementById('pagesInput');
 const select = document.getElementById('selectInput');
 
 
+
 const confirmBtn = document.getElementById('confirmBtn');
 
 confirmBtn.addEventListener('click', ()=>
 addBookToLibrary(title.value, 
     author.value, 
     pages.value, 
-    true));
+    select.value));
 
 
 

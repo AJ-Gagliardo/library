@@ -51,6 +51,23 @@
     align-items: center;
 }
 
+.header-right-side{
+    display:flex;
+    height:1.5rem
+}
+/* .deleteAll{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    text-justify: center;
+    
+}
+ */
+
+
+.trashIcon{
+    height:1.1rem;
+}
 
 
 
@@ -120,6 +137,8 @@ align-items:center;
     background-color: olivedrab;
     color:white;
     text-justify: center;
+
+    border-radius:8px;
     
     /* position:absolute;
     top:80%;
@@ -131,6 +150,8 @@ align-items:center;
     text-align:center;
     background-color: rgb(119, 3, 3);
     color:white;
+
+    border-radius:8px;
 }
 
 
@@ -153,7 +174,14 @@ input{
     margin-left:0;
 }
 
+.deleteOption{
+    margin-top:2px;
+    background-color:crimson ;
+    /* font-weight:600; */
+    color:white;
+    border-radius:8px;
 
+}
 
 
 /* Mobile and responsive design */
@@ -165,7 +193,9 @@ input{
       grid-template-rows: auto;
       margin:0;
       column-gap: 0;
-      /* align-items:center; */
+
      
     }
   }
+
+

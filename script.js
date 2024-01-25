@@ -75,7 +75,9 @@ function resetDisplayLibrary(){
                    readDiv.classList.add('notRead');
                    readDiv.textContent = "Not Read";
                 }
-                 
+            const deleteDiv = document.createElement('div');
+            deleteDiv.classList.add('deleteOption');
+           deleteDiv.textContent = 'Delete';
     
     
     
@@ -84,9 +86,10 @@ function resetDisplayLibrary(){
             bookDiv.appendChild(authorDiv);
             bookDiv.appendChild(pagesDiv);
             bookDiv.appendChild(readDiv);
+            bookDiv.appendChild(deleteDiv)
     
             content.appendChild(bookDiv);
-    
+
     
         ;
     }
@@ -162,3 +165,8 @@ addBookToLibrary(title.value,
     author.value, 
     pages.value, 
     true));
+
+
+
+
+

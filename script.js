@@ -38,9 +38,13 @@ function resetDisplayLibrary(){
     
     
     }
+
+
+
+
+
     
-    
-    function addDisplayLibrary(){
+  function addDisplayLibrary(){
 
     
             // This section is to create div for each book, so the data can be inserted in the grid
@@ -65,16 +69,37 @@ function resetDisplayLibrary(){
     
             const readDiv = document.createElement('div');
            
-           if (myLibrary[myLibrary.length-1].read === true){
+           if (myLibrary[myLibrary.length-1].value === true){
     
                readDiv.classList.add('read');
                readDiv.textContent = "read";
+
+
            }
                else { 
     
                    readDiv.classList.add('notRead');
                    readDiv.textContent = "Not Read";
+                    
                 }
+
+                readDiv.addEventListener('click', ()=> {
+                    if(readDiv.classList.contains('read')){
+                        readDiv.classList.replace('read','notRead');
+                        console.log('changed read to bot read')
+                    }
+                    else if(readDiv.classList.contains('notRead')){
+                        readDiv.classList.replace('notRead','read');
+                        console.log('changed not read to read')
+                    }
+                    else{
+                        return;
+                    }
+                
+        
+                });
+                
+            
             const deleteDiv = document.createElement('div');
             deleteDiv.classList.add('deleteOption');
            deleteDiv.textContent = 'Delete';
@@ -92,8 +117,32 @@ function resetDisplayLibrary(){
 
     
         ;
-    }
+    };
 
+// This part is for the buttons in the books that are already created
+
+        // change the book from read to unread and viceversa
+
+
+ 
+        const activateToggleRead = () => {
+        readDiv.addEventListener('click', ()=> {
+            if(readDiv.classList.contains('read')){
+                readDiv.classList.replace('read','unread');
+                console.log('changed read to unread')
+            }
+            else if(readDiv.classList.contains('.unread')){
+                readDiv.classList.replace('unread','read');
+                console.log('changed unread to read')
+            }
+            else{
+                return;
+            }
+        
+
+        });
+    }
+    
 
 
 

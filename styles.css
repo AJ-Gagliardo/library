@@ -65,9 +65,9 @@
  */
 
 
-.trashIcon{
+/* .trashIcon{
     height:1.1rem;
-}
+} */
 
 
 
@@ -75,7 +75,7 @@
 /* Content */
 
 .content{
-    height:70%;
+    height:80%;
     display:grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
 /* grid-template-columns: 20% 20% 20% 20%; */

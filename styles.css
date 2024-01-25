@@ -38,6 +38,7 @@
 }
 
 
+
 ::backdrop{
     background-color: #141413;
     opacity:30%;
@@ -59,8 +60,9 @@
 .content{
     height:70%;
     display:grid;
-/* grid-template-columns: 1fr 1fr 1fr 1fr; */
-grid-template-columns: 20% 20% 20% 20%;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+/* grid-template-columns: 20% 20% 20% 20%; */
+/* grid-template-columns:1fr; */
 grid-template-rows: 1fr 1fr 1fr;
 width:100%;
 gap:2rem 2rem;
@@ -150,3 +152,20 @@ input{
 .formButtons .closeButton{
     margin-left:0;
 }
+
+
+
+
+/* Mobile and responsive design */
+
+@media only screen and (max-width: 600px) {
+    .content {
+        display:grid;
+        grid-template-columns:1fr !important; 
+      grid-template-rows: auto;
+      margin:0;
+      column-gap: 0;
+      /* align-items:center; */
+     
+    }
+  }

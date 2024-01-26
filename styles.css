@@ -18,6 +18,8 @@
 #463832
 */
 
+
+
 /* General */
 :root{
     background-color: #f2e9d0;
@@ -124,7 +126,7 @@ align-items:center;
 
     display:grid;
 
-    grid-template-row:1rem;
+    grid-template-rows:auto;
     
     /* gap:2px; */
     text-align:center;
@@ -189,15 +191,29 @@ input{
 
 /* Mobile and responsive design */
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (min-width: 601px) {
     .content {
+        background-color: red;
         display:grid;
-        grid-template-columns:1fr !important; 
+        grid-template-columns: 1fr;
+        
+    }
+} */
+
+@media only screen and (max-width: 600px) {
+    div#content.content {
+        display:grid;
+        grid-template-columns:1fr;
+        /* grid-auto-columns: 1fr;  */
       grid-template-rows: auto;
       margin:0;
       column-gap: 0;
-
+      /* background-color: red; */
      
+    }
+
+    .book{
+        grid-column: 1/5;
     }
   }
 

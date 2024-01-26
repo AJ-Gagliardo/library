@@ -105,8 +105,49 @@ function resetDisplayLibrary(){
             const deleteDiv = document.createElement('div');
             deleteDiv.classList.add('deleteOption');
            deleteDiv.textContent = 'Delete';
+
+
+
+           deleteDiv.addEventListener('click', (e) => {
+            const bookId = bookDiv.id; // Get the book ID associated with the delete button
+            const bookIndex = parseInt(bookId.replace('book', '')) - 1; // Calculate the index in myLibrary
+        
+            if (bookIndex >= 0 && bookIndex < myLibrary.length) {
+                myLibrary.splice(bookIndex, 1); // Remove the book from the array
+
+                bookDiv.remove();
+        
+                // Update the display by resetting it and adding the books again
+                // resetDisplayLibrary();
+                // myLibrary.forEach((book) => {
+                //     addDisplayLibrary(book);
+                // });
+            }
+        });
+
+           deleteDiv.addEventListener('click',(e)=>{
+            // console.log(myLibrary.includes(deleteDiv.id))
+       
+            // bookDiv.remove();
+           
+           })
     
-    
+    // to delete the current book
+
+function findBook(libraryArray, title){
+    if(libraryArray.length === 0 || libraryArray === null){
+        return;
+    };
+    // console.log()
+    // for(book of libraryArray)
+    // if(book.title === title)
+}
+
+    // function deleteBook(book){
+    //     myLibrary.splice(book, book+1)
+    // } 
+
+
     
         // putting elements inside the book div
             bookDiv.appendChild(titleDiv);
@@ -128,21 +169,23 @@ function resetDisplayLibrary(){
 
  
         const activateToggleRead = () => {
-        readDiv.addEventListener('click', ()=> {
-            if(readDiv.classList.contains('read')){
-                readDiv.classList.replace('read','unread');
-                console.log('changed read to unread')
-            }
-            else if(readDiv.classList.contains('.unread')){
-                readDiv.classList.replace('unread','read');
-                console.log('changed unread to read')
-            }
-            else{
-                return;
-            }
-        
-
-        });
+            readDiv.addEventListener('click', ()=> {
+                if(readDiv.classList.contains('read')){
+                    readDiv.classList.replace('read','notRead');
+                    readDiv.textContent = 'Not Read';
+                    console.log('changed read to bot read')
+                }
+                else if(readDiv.classList.contains('notRead')){
+                    readDiv.classList.replace('notRead','read');
+                    readDiv.textContent = 'Read';
+                    console.log('changed not read to read')
+                }
+                else{
+                    return;
+                }
+            
+    
+            });
     }
     
 
